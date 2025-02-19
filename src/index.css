@@ -68,7 +68,7 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-height: 74vh;
+  max-height: 65vh;
   overflow-y: auto;
 }
 
@@ -119,6 +119,28 @@ li button:first-of-type {
 
 li button:last-of-type {
   color: #e74c3c;
+}
+
+/* Garante renderização adequada em mobile */
+@media screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  li {
+    padding: 0.8rem;
+  }
 }
 
 /* Animações */
